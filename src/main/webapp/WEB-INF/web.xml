@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <display-name>Cam's Portfolio Web Application</display-name>
+
+  <!-- Startup web page -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- Servlet Declaration/Mapping Section -->
+  <servlet>
+    <servlet-name>ContactForm</servlet-name>
+    <servlet-class>com.mydomain.portfolio.contact.ContactFormServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactForm</servlet-name>
+    <url-pattern>/ContactForm</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FileDownloaderServlet</servlet-name>
+    <servlet-class>com.mydomain.portfolio.downloader.FileDownloaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileDownloaderServlet</servlet-name>
+    <url-pattern>/Download</url-pattern>
+  </servlet-mapping>
+
+</web-app>

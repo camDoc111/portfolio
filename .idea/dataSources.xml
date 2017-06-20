@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="devJobs.sqlite" uuid="b4b48922-6189-4cc9-8f6f-7b6eb4fd8a8e">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:devJobs.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="DevJobs.db" uuid="87bb56a9-1f68-43d5-ade6-0b7aa03d0776">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/src/main/resources/DevJobs.db</jdbc-url>
+    </data-source>
+  </component>
+</project>
