@@ -52,7 +52,7 @@ public class FileDownloaderServlet extends HttpServlet
         String fileAlias  = "";
         String fileServed = "";
 
-        fileName = request.getParameter("fileDownload");
+        fileName = request.getParameter("fileDownloaded");
 
         try
         {
@@ -102,7 +102,7 @@ public class FileDownloaderServlet extends HttpServlet
                 // Set new response type/headers
                 response.setContentType("application/" + fileAlias);
                 response.setHeader("Content-Disposition", "attachment; filename=\"" + fileServed + "\"");
-                //response.setContentLength((int) reader.);
+                response.setContentLength(is.available());
 
                 final int EOF = -1;
                 int bytesRead;
